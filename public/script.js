@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
         try {
             // Faz a requisição ao backend, enviando a cidade como query string
             // console.log('Testando...')
-            const response = await fetch(`http://localhost:5500/api/weather?location=${location}`);
+            const response = await fetch(`/api/weather?location=${location}`);
             const data = await response.json();
 
             if (response.ok) {
